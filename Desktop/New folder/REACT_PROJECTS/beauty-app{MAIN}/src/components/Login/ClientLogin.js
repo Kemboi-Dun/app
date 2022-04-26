@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import CompanyLogo from './CompanyLogo';
 import './formLogin.css'
 function ClientLogin() {
   return (
     <div>
+        <CompanyLogo/>
         <div className="col-12 column-2">
             <div className=" title">
                 <p className="mob-logo">Company
@@ -24,7 +27,9 @@ function ClientLogin() {
         
         
             <div className="link">
-<a href="">Forgot password?</a>
+            <Link to="/resetPassword">
+                Forgot password?
+                </Link>
             </div>
         </div>
     </div>

@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link, Outlet } from 'react-router-dom';
 import './selectLogin.css'
 function SelectLogin() {
   return (
@@ -12,18 +13,29 @@ function SelectLogin() {
            
                 
             </div>
+            <Link className="test"  to="/clientLogin">
             <div className=" btn">
-                <a href=""><span>As Client</span></a>
+               
+                <span>As Client</span>
                 
             </div>
+            </Link> 
+            <Link className="test" to="/serviceProviderLogin">
             <div className=" btn">
-                <a href=""><span>As Service Provider</span></a>
-                
+            
+            <span>As Service Provider</span>
+              
             </div>
+            </Link>
+
+
             <div className="link">
-<a href="">Forgot password?</a>
+                <Link to="/resetPassword">
+                Forgot password?
+                </Link>
             </div>
         </div>
+        <Outlet/>
     </div>
   )
 }

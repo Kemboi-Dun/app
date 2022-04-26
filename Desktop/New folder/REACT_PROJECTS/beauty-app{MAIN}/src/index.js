@@ -1,14 +1,19 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import { render} from 'react-dom';
 import './index.css';
 import App from './App';
+import ClientLogin from './components/Login/ClientLogin';
+import ServiceProvider from './components/Login/ServiceProvider';
 
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
+const rootElement = document.getElementById("root");
+render(
+<BrowserRouter>
+<Routes>
+  <Route path="/" element={<App/>}/>
+  <Route path="clientLogin" element={<ClientLogin/>}/>
+  <Route path="serviceProviderLogin" element={<ServiceProvider/>}/>
+</Routes>
+</BrowserRouter>, rootElement);
 

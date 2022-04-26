@@ -18,10 +18,13 @@
     color:#be5050;
     font-family: 'Josefin Sans', sans-serif;
 }
-.column-2 .btn a{
+.column-2 .btn  span{
     font-size:15px;
     font-weight: 700;
     color:#fff;
+    text-decoration:none;
+}
+.test{
     text-decoration: none;
 }
 .column-2 .btn{
@@ -31,6 +34,7 @@
     width:152px;
     padding:8px;
     cursor:pointer;
+    
 }
 .column-2 .btn:hover{
     background:#be5050;
