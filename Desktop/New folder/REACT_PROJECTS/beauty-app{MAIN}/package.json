@@ -1,7 +1,7 @@
 {
   "name": "beauty-app",
   "version": "0.1.0",
-  "homepage": "http://Kemboi-Dun.github.io/copy",
+  "homepage": "https://Kemboi-Dun.github.io/app",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.12.4",
